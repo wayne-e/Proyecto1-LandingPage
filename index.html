@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <!--Logo y nombre de la tienda-->
+    <div id="conjuntoLogo">
+      <div id="logoTienda">
+        <!--Imagen-->
+      </div>
+      <div>
+        Awesome Mix - Music Shop
+      </div>
+    </div>
+    <nav>
+      <a id="navInformacion" href="#informacion">Información</a>
+      <a id="navProductos" href="#productos"> Productos</a>
+      <a id="navIntereses" href="#intereses">Intereses</a>
+    </nav>
+  </header>
+
+
+  <main>
+    <!--Seccion Informacion-->
+    <section id="informacion">
+      <div>
+      <img class="logo" src="img/logo.png" alt="AwesomeMixLogo">
+      <div >
+          <h1>Awesome Mix - Music Shop</h1>
+          <h2>Life is Music</h2>
+      </div>
+    </div>
+      <article>
+        <img id="imagenRepresentativa" src="img/main.jpg">
+        <article class="flex-container">
+          <p id="descripcion">Somos una tienda destinada a la venta de una amplia gama de Instrumentos Musicales,
+            atención
+            personalizada y con productos
+            de primera calidad. Somos tu mejor opción en compras, aprovecha nuestros Fin de Semana de
+            Descuentos
+            al comprar
+            en cualquiera de nuestras agencias.
+          </p>
+        </article>
+      </article>
+    </section>
+
+
+    <!--Seccion de Venta de Productos-->
+    <section id="productos">
+      <h1>INFORMESE SOBRE NUESTROS PRODUCTOS</h1>
+
+      <h2>Mas vendidos</h2>
+      <article class="flex-container">
+        <div class="producto" onclick="comprarProducto();">
+          <img src="img/1.jpg">
+          <p>Guitarras</p>
+        </div>
+
+        <div class="producto">
+          <img src="img/13.jpg" onclick="comprarProducto();">
+          <p>Multi-Función</p>
+        </div>
+        <div class="producto">
+          <img src="img/3.jpg" onclick="comprarProducto();">
+          <p>Guitarras Eléctricas</p>
+        </div>
+        <div class="producto" onclick="comprarProducto();">
+          <img src="img/4.jpg">
+          <p>Violines</p>
+        </div>
+        <div class="producto" onclick="comprarProducto();">
+          <img src="img/10.jpg">
+          <p>Saxofón</p>
+        </div>
+      </article>
+
+
+      <h2>Cuerdas</h2>
+      <article class="flex-container">
+        <div class="producto" onclick="comprarProducto();">
+          <img src="img/1.jpg">
+          <p>Guitarras</p>
+        </div>
+
+        <div class="producto" onclick="comprarProducto();">
+          <img src="img/2.jpg">
+          <p>Violoncellos</p>
+        </div>
+        <div class="producto">
+          <img src="img/3.jpg" onclick="comprarProducto();">
+          <p>Guitarras Eléctricas</p>
+        </div>
+        <div class="producto" onclick="comprarProducto();">
+          <img src="img/4.jpg">
+          <p>Violines</p>
+        </div>
+        <div class="producto" onclick="comprarProducto();">
+          <img src="img/5.jpg">
+          <p>Banjos</p>
+        </div>
+      </article>
+
+
+      <h2>Viento</h2>
+      <article class="flex-container">
+        <div class="producto" onclick="comprarProducto();">
+          <img src="img/6.jpg">
+          <p>Clarinetes</p>
+        </div>
+
+        <div class="producto" onclick="comprarProducto();">
+          <img src="img/7.jpg">
+          <p>Trompetas</p>
+        </div>
+        <div class="producto">
+          <img src="img/8.jpg" onclick="comprarProducto();">
+          <p>Acordeones</p>
+        </div>
+        <div class="producto" onclick="comprarProducto();">
+          <img src="img/9.jpg">
+          <p>Flautas</p>
+        </div>
+        <div class="producto" onclick="comprarProducto();">
+          <img src="img/10.jpg">
+          <p>Saxofón</p>
+        </div>
+      </article>
+
+
+      <h2>Teclados</h2>
+      <article class="flex-container">
+        <div class="producto" onclick="comprarProducto();">
+          <img src="img/11.jpg">
+          <p>Sintetizadores</p>
+        </div>
+
+        <div class="producto" onclick="comprarProducto();">
+          <img src="img/12.jpg">
+          <p>Dos Octavas</p>
+        </div>
+        <div class="producto">
+          <img src="img/13.jpg" onclick="comprarProducto();">
+          <p>Multi-Función</p>
+        </div>
+        <div class="producto" onclick="comprarProducto();">
+          <img src="img/14.jpg">
+          <p>Plegables</p>
+        </div>
+        <div class="producto" onclick="comprarProducto();">
+          <img src="img/15.jpg">
+          <p>Melódicas</p>
+        </div>
+      </article>
+      
+    </section>
+
+    <!--Sección del Formulario-->
+    <section id="intereses">
+      <h1>Esta es la seccion de intereses</h1>
+      <h3>Ayudanos</h3>
+
+
+      <article class="flex-container">
+        <form action="">
+          <table>
+            <!--Para que puedan usarse bajo P, talvez puedan meterse en un div o en una tabla-->
+            <tr>
+              <td><label for="nombre">Nombre:</label>
+              </td>
+              <td><input type="text" placeholder="Nombre" id="nombre" required /><br>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="email">Email:</label>
+              </td>
+              <td><input type="email" placeholder="correoelectronico@servicio.com" id="email" required /><br>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="descripcion">Intereses:</label>
+              </td>
+              <td><textarea id="comentarios" rows="8" cols="30"
+                  placeholder="Sugerencias, Comentarios, ¿Algun otro instrumento que necesites? ¡Escríbenos!"
+                  id="descripcion" required></textarea><br>
+              </td>
+            </tr>
+            <tr>
+              <td>
+              </td>
+              <td><button id="enviar" type="submit">Enviar</button><button id="vaciar" type="reset">Vaciar</button>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </article>
+    </section>
+
+
+    <!--Caja Para presentar informacion sobre el producto seleccionado o para dar un mensaje al presionar enviar-->
+    <a href="#mensaje" id="clickProducto"></a>
+    <a href="#mensaje" id="clickEnviado"></a>
+    <div id="mensaje">
+      <div class="cajaInterna">
+        <h2 id="textoMensaje"></h2>
+        <a id="cerrar" href="#">Cerrar</a>
+        <p id="parrafoMensaje"></p>
+
+      </div>
+    </div>
+  </main>
+
+
+  <footer>
+    <!--Informacion de contacto, nombre de la tienda-->
+    <div>Awesome Mix - Music Shop</div>
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
